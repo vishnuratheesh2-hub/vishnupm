@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Why Personal Branding Matters</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: Arial; padding: 40px; max-width: 900px; margin: auto; }
+h1 { color: #111827; }
+</style>
+</head>
+<body>
+
+<h1>Why Personal Branding Matters</h1>
+<p><i>Published by Vishnu PM</i></p>
+
+<p>
+Personal branding is the process of building a unique professional identity.
+In today’s digital world, it helps you stand out, build trust, and attract opportunities.
+</p>
+
+<p>
+A strong personal brand communicates your values, skills, and expertise clearly.
+</p>
+
+<a href="blogs.html">← Back to Blogs</a>
+
+</body>
+</html>
