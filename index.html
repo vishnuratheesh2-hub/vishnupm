@@ -3,113 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vishnu PM | Marketing Portfolio</title>
+<title>Vishnu P M | Marketing Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-:root {
-    --primary: #2563eb;
-    --dark: #111827;
-    --light: #f9fafb;
-}
-
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: var(--light);
-    color: #333;
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
 }
 
-/* NAVBAR */
+/* NAV */
 nav {
-    background: white;
-    padding: 15px 40px;
+    padding: 25px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 nav a {
+    color: #e5e7eb;
     margin-left: 20px;
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    font-size: 14px;
 }
 nav a:hover {
-    color: var(--primary);
+    color: #38bdf8;
 }
 
 /* HERO */
-header {
-    background: linear-gradient(120deg, var(--dark), #1f2933);
-    color: white;
-    padding: 100px 20px;
-}
 .hero {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
+    padding: 80px 40px;
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1.2fr 1fr;
     gap: 40px;
     align-items: center;
 }
-.hero img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid white;
-}
 .hero h1 {
-    font-size: 42px;
+    font-size: 52px;
+    line-height: 1.1;
 }
 .hero p {
     font-size: 18px;
-    opacity: 0.9;
+    opacity: 0.85;
 }
+.hero img {
+    max-width: 100%;
+    height: 450px;
+    object-fit: contain;
+}
+
+/* BUTTON */
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 14px 30px;
-    background: var(--primary);
-    color: white;
-    border-radius: 6px;
+    margin-top: 25px;
+    padding: 14px 28px;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
     text-decoration: none;
-    font-weight: 500;
+    border-radius: 30px;
+    font-size: 14px;
+}
+.btn:hover {
+    background: #38bdf8;
+    color: #020617;
 }
 
 /* SECTIONS */
 section {
-    max-width: 1100px;
+    max-width: 900px;
     margin: auto;
-    padding: 70px 20px;
+    padding: 80px 40px;
 }
 section h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 28px;
+    font-size: 26px;
+    margin-bottom: 25px;
 }
 
-/* CARDS */
-.grid {
+/* LIST */
+.list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    gap: 20px;
 }
 
 /* FOOTER */
 footer {
-    background: var(--dark);
-    color: white;
     text-align: center;
-    padding: 25px;
+    padding: 40px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .hero img {
+        height: 300px;
+        margin: auto;
+    }
+    .hero h1 {
+        font-size: 38px;
+    }
 }
 </style>
 </head>
@@ -117,98 +117,70 @@ footer {
 <body>
 
 <nav>
-    <strong>Vishnu PM</strong>
+    <strong>Vishnu P M</strong>
     <div>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
+        <a href="#work">Work</a>
         <a href="blogs.html">Blogs</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
 
-<header>
-    <div class="hero">
-        <div>
-            <h1>Vishnu P M</h1>
-            <p>MBA – Marketing | Digital Marketing • SEO • Branding • Market Research</p>
-            <a href="blogs.html" class="btn">Read My Articles</a>
-        </div>
+<div class="hero">
+    <div>
+        <h1>Marketing<br>Strategist &<br>Digital Marketer</h1>
+        <p>
+            MBA Marketing student with hands-on experience in Digital Marketing,
+            SEO, branding, and analytics. Passionate about building strong brands
+            and impactful marketing strategies.
+        </p>
 
-        <!-- PHOTO PLACEHOLDER -->
-        <img src="VISHNU PHOTO.png" alt="Vishnu PM">
+        <a href="Vishnu_PM_Resume.pdf" class="btn" download>Download CV</a>
     </div>
-</header>
+
+    <img src="vishnuwesite.png" alt="Vishnu PM">
+</div>
 
 <section id="about">
-    <h2>About Me</h2>
-    <p style="text-align:center; max-width:800px; margin:auto;">
-        I am a motivated MBA Marketing student with a strong foundation in digital marketing,
-        branding, advertising, and strategic planning. I am passionate about creating impactful
-        campaigns, enhancing brand visibility, and aligning marketing strategies with business goals.
-        With a background in computer science and hands-on digital marketing experience,
-        I bring both creative and analytical thinking to every project.
+    <h2>About</h2>
+    <p>
+        I am a motivated marketing professional currently pursuing an MBA in Marketing.
+        With a background in Computer Science and practical exposure to digital marketing,
+        I bring both analytical thinking and creative problem-solving to marketing challenges.
+        I enjoy working on branding, campaign strategy, and audience engagement to drive
+        meaningful business outcomes.
     </p>
 </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="grid">
-        <div class="card">Digital Marketing</div>
-        <div class="card">SEO & SEM</div>
-        <div class="card">Social Media Marketing</div>
-        <div class="card">Branding & Advertising</div>
-        <div class="card">Market Analysis</div>
-        <div class="card">Basic Web Development</div>
-    </div>
-</section>
+<section id="work">
+    <h2>Experience & Projects</h2>
+    <div class="list">
+        <p>
+            <strong>Digital Marketing Intern – BTRAC</strong><br>
+            Worked on Social Media Marketing, SEO, content creation, and basic analytics.
+            Executed supervised marketing projects and supported brand visibility initiatives.
+        </p>
 
-<section id="experience">
-    <h2>Experience</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Digital Marketing Intern</h3>
-            <p><strong>BTRAC (Business Technology Research & Analytics Centre)</strong></p>
-            <p>
-                Gained hands-on experience in Social Media Marketing, SEO, content creation,
-                and basic analytics. Successfully executed a supervised digital marketing project
-                and contributed to lead generation and brand visibility initiatives.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section id="education">
-    <h2>Education</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>MBA – Marketing</h3>
-            <p>Parul University (2024 – 2026)</p>
-        </div>
-        <div class="card">
-            <h3>BSc Computer Science</h3>
-            <p>MHES College of Science & Technology (2020 – 2023)</p>
-        </div>
+        <p>
+            <strong>Tuition App Project</strong><br>
+            Developed an Android app and website as part of BSc Computer Science.
+            Gained experience in web development, planning, and project execution.
+        </p>
     </div>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
-    <p style="text-align:center;">
+    <p>
         📧 vishnupmofficial@gmail.com <br>
         📱 +91 8547662703 <br>
-        🔗 <a href="https://www.linkedin.com/in/vishnu-pm-726277236" target="_blank">LinkedIn Profile</a>
+        🔗 <a href="https://www.linkedin.com/in/vishnu-pm-726277236" target="_blank">LinkedIn</a>
     </p>
 </section>
 
 <footer>
-    <p>© 2026 Vishnu PM • Marketing Portfolio</p>
+    © 2026 Vishnu P M
 </footer>
 
 </body>
 </html>
-
-
-
-
