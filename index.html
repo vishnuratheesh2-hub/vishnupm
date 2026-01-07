@@ -3,118 +3,208 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vishnu PM | Portfolio</title>
+<title>Vishnu PM | Marketing Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+:root {
+    --primary: #2563eb;
+    --dark: #111827;
+    --light: #f9fafb;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
     color: #333;
 }
+
+/* NAVBAR */
+nav {
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+nav a:hover {
+    color: var(--primary);
+}
+
+/* HERO */
 header {
-    background: linear-gradient(120deg, #1f2933, #111827);
+    background: linear-gradient(120deg, var(--dark), #1f2933);
     color: white;
-    padding: 80px 20px;
-    text-align: center;
+    padding: 100px 20px;
 }
-header h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+.hero {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 40px;
+    align-items: center;
 }
-header p {
+.hero img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+.hero h1 {
+    font-size: 42px;
+}
+.hero p {
     font-size: 18px;
     opacity: 0.9;
 }
 .btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 12px 25px;
-    background: #2563eb;
+    padding: 14px 30px;
+    background: var(--primary);
     color: white;
-    text-decoration: none;
     border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
 }
+
+/* SECTIONS */
 section {
-    padding: 60px 20px;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
+    padding: 70px 20px;
 }
-h2 {
+section h2 {
     text-align: center;
-    margin-bottom: 30px;
-    color: #1f2933;
+    margin-bottom: 40px;
+    font-size: 28px;
 }
-.skills span {
-    display: inline-block;
-    background: #e5e7eb;
-    padding: 10px 15px;
-    margin: 6px;
-    border-radius: 20px;
+
+/* CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
-.project {
+.card {
     background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
+
+/* FOOTER */
 footer {
-    background: #111827;
+    background: var(--dark);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 </style>
 </head>
 
 <body>
 
+<nav>
+    <strong>Vishnu PM</strong>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
 <header>
-    <h1>Vishnu PM</h1>
-    <p>Marketing Student | Creative Thinker | Problem Solver</p>
-    <a href="blogs.html" class="btn">Read My Blogs</a>
+    <div class="hero">
+        <div>
+            <h1>Vishnu P M</h1>
+            <p>MBA – Marketing | Digital Marketing • SEO • Branding</p>
+            <a href="blogs.html" class="btn">Read My Articles</a>
+        </div>
+
+        <!-- PHOTO PLACEHOLDER -->
+        <img src="profile.jpg" alt="Vishnu PM">
+    </div>
 </header>
 
 <section id="about">
     <h2>About Me</h2>
-    <p style="text-align:center;">
-        I am a motivated individual with strong analytical and creative thinking skills,
-        passionate about marketing, creativity, and personal branding.
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        I am a motivated MBA Marketing student with a strong foundation in digital marketing,
+        branding, advertising, and strategic planning. I am passionate about creating impactful
+        campaigns, enhancing brand visibility, and aligning marketing strategies with business goals.
+        With a background in computer science and hands-on digital marketing experience,
+        I bring both creative and analytical thinking to every project.
     </p>
 </section>
 
 <section id="skills">
     <h2>Skills</h2>
-    <div class="skills" style="text-align:center;">
-        <span>Marketing Strategy</span>
-        <span>Content Creation</span>
-        <span>SEO Basics</span>
-        <span>Analytics</span>
-        <span>Communication</span>
+    <div class="grid">
+        <div class="card">Digital Marketing</div>
+        <div class="card">SEO & SEM</div>
+        <div class="card">Social Media Marketing</div>
+        <div class="card">Branding & Advertising</div>
+        <div class="card">Market Analysis</div>
+        <div class="card">Basic Web Development</div>
     </div>
 </section>
 
-<section id="projects">
-    <h2>Projects / Experience</h2>
-    <div class="project">
-        <h3>Digital Marketing Work</h3>
-        <p>Experience in content planning, campaign ideas, and basic SEO.</p>
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Digital Marketing Intern</h3>
+            <p><strong>BTRAC (Business Technology Research & Analytics Centre)</strong></p>
+            <p>
+                Gained hands-on experience in Social Media Marketing, SEO, content creation,
+                and basic analytics. Successfully executed a supervised digital marketing project
+                and contributed to lead generation and brand visibility initiatives.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>MBA – Marketing</h3>
+            <p>Parul University (2024 – 2026)</p>
+        </div>
+        <div class="card">
+            <h3>BSc Computer Science</h3>
+            <p>MHES College of Science & Technology (2020 – 2023)</p>
+        </div>
     </div>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
     <p style="text-align:center;">
-        📧 Email: yourmail@example.com <br><br>
-        📱 WhatsApp: +91-XXXXXXXXXX
+        📧 vishnupmofficial@gmail.com <br>
+        📱 +91 8547662703 <br>
+        🔗 <a href="https://www.linkedin.com/in/vishnu-pm-726277236" target="_blank">LinkedIn Profile</a>
     </p>
 </section>
 
 <footer>
-    <p>© 2026 Vishnu PM</p>
+    <p>© 2026 Vishnu PM • Marketing Portfolio</p>
 </footer>
 
 </body>
 </html>
-
-
